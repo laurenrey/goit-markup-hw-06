@@ -608,7 +608,6 @@ img {
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     transition: border-color var(--transition-dur-tf);
-
 }
 
 .subscription-input:hover,
@@ -631,6 +630,20 @@ img {
 .subscription-btn {
     padding-left: 29px;
     padding-right: 62px;
+
+    width: 200px;
+    height: 50px;
+
+    color: var(--color-light);
+    background-color:var(--color-accent);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    border: none;
+    transition: background-color var(--transition-dur-tf), box-shadow var(--transition-dur-tf);
 }
 
 .sub-btn {
@@ -643,13 +656,14 @@ img {
      right: 28px;
      transform: translateY(-50%);
      fill: var(--color-light);
-     transition: fill var(--transition-dur-tf);
  }
 
-.subscription-btn:hover + .send-icon,
-.subscription-btn:focus + .send-icon {
-    fill: var(--color-accent);
+ .subscription-btn:hover,
+ .subscription-btn:focus {
+    background-color: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+
 
 
 /* ----------Modal---------- */
@@ -835,6 +849,7 @@ img {
     border-color: var(--color-accent); 
 }
 
+
 .checkbox-input:checked + .check-text .check-icon {
     fill: var(--color-light);
 }
@@ -866,17 +881,17 @@ img {
     letter-spacing: 0.06em;
 
     color: var(--color-light);
-    background-color: var(--color-accent);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    background-color: var(--color-accent);
     border: transparent;
-    transition: border-color var(--transition-dur-tf), box-shadow var(--transition-dur-tf);
+    transition: background-color var(--transition-dur-tf), box-shadow var(--transition-dur-tf);
 }
 
 .modal-btn:hover,
 .modal-btn:focus {
-    background-color: #0b7dda;
+    background-color: #188CE8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
 }
 
 .submit-btn {
