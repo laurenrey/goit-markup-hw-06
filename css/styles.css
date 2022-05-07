@@ -610,7 +610,7 @@ img {
     transition: border-color var(--transition-dur-tf);
 }
 
-.subscription-input:hover,
+
 .subscription-input:focus {
     border-color: var(--color-accent);
 }
@@ -868,10 +868,16 @@ img {
 }
 
 .modal-checkbox {
+    display: flex;
     margin-top: 20px;
     margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    
 }
-
+.policy-link {
+    color: var(--color-accent);
+}
 .modal-btn {
     text-align: center;
     padding: 10px 55px;
